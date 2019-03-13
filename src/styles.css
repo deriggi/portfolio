@@ -14,7 +14,7 @@
   
     /* Full height */
     /* height: 100%;  */
-  
+    
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -35,8 +35,23 @@
     top: 0;
     left: 0;
     /* background-color: rgba(black, 0.5); */
-    background:rgba(0, 0, 0, 0.75)
+    background:rgba(0, 0, 0, 1);
+
+    
+    animation: fader 10s alternate infinite;
 }
+
+
+
+@keyframes fader {
+    0% {
+      opacity:0.95;
+    }
+    100% {
+        opacity:0.75;
+    }
+    
+  }
 
   .btn-blue:hover {
     @apply bg-white;
