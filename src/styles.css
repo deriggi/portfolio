@@ -3,3 +3,41 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* .btn-blue {
+    @apply bg-blue text-white font-bold py-2 px-4 rounded;
+} */
+
+.bg { 
+    /* The image used */
+    background-image: url("https://s3.amazonaws.com/jdsite2/images/20180214_053250.jpg");
+  
+    /* Full height */
+    /* height: 100%;  */
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .8)),
+                     url("https://s3.amazonaws.com/jdsite2/images/20180214_053250.jpg"); */
+  }
+
+  .has-overlay::after {
+    content:"";
+    position: absolute;
+    padding: 100px 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(black, 0.5); */
+    background:rgba(0, 0, 0, 0.75)
+}
+
+  .btn-blue:hover {
+    @apply bg-white;
+  }
